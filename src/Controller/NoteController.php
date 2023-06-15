@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/note')]
 class NoteController extends AbstractController
 {
-    #[Route('/', name: 'app_note_index', methods: ['GET'])]
+    #[Route('/', name: 'note', methods: ['GET'])]
     public function index(NoteRepository $noteRepository): Response
     {
         return $this->render('note/index.html.twig', [

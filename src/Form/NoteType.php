@@ -12,11 +12,11 @@ class NoteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('noteId')
-            ->add('userId')
-            ->add('categoryId')
-            ->add('title')
-            ->add('content')
+            ->add('1')
+            ->add('1')
+            ->add('1')
+            ->add('Note 1')
+            ->add('Lorem ipsum dolor sit amet')
         ;
     }
 

@@ -14,13 +14,13 @@ class Note
     private ?int $id = null;
 
     #[ORM\Column]
-    private ?int $noteId = null;
+    private ?int $noteId = 1;
 
     #[ORM\Column(length: 50)]
-    private ?string $title = null;
+    private ?string $title = 'Note 1';
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $content = null;
+    private ?string $content = 'Lorem ipsum dolor sit amet';
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
